@@ -7,7 +7,7 @@ export class Cliente {
   }
 
   constructor (nome, cpf) {
-    this.name = nome;
+    this.nome = nome;
     this._cpf = cpf;
   }
 }
