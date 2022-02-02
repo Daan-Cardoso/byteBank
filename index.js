@@ -14,5 +14,4 @@ conta1.sacar(50);
 conta1.depositar(500);
 conta1.transferir(200, conta2);
 
-console.log(cliente1.cpf);
-console.log(cliente2.cpf);
+console.log(ContaCorrente.numeroDeContas);
