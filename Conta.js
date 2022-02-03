@@ -22,9 +22,18 @@ export class Conta {
   }
 
   sacar(valor) {
-    if (this._saldo >= valor) return;
-    this._saldo -= valor;
-    return valor;
+    const taxa = 1;
+    return this._sacar(valor, taxa);
+  }
+
+  _sacar(valor, taxa) {
+    const valorSacado = (valor * taxa).toFixed(2);
+
+    if (this._saldo >= valorSacado) {
+      this._saldo -= valorSacado;
+      return valorSacado;
+    }
+    return 0;
   }
 
   depositar(valor) {
